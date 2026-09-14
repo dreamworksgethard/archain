@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/mark.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="ARCHAIN — Launch without limits on Arc Chain. Coming soon." />
+    <title>ARCHAIN</title>
+    <link rel="preload" href="fonts/CyGrotesk-GrandDark.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/CyGrotesk-GrandRegular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <img src="assets/cursor.png" alt="" />
+    </div>
+    <div class="page" id="page">
+      <div class="loader" id="loader" aria-busy="true" aria-live="polite">
+        <div class="loader__glow" aria-hidden="true"></div>
+        <img src="assets/mark.png" alt="" class="loader__logo" draggable="false" />
+        <span class="loader__label">ARCHAIN</span>
+      </div>
+
+      <div class="atmosphere" aria-hidden="true">
+        <div class="atmosphere__base"></div>
+        <div class="atmosphere__banner"></div>
+        <div class="atmosphere__glow atmosphere__glow--tr"></div>
+        <div class="atmosphere__glow atmosphere__glow--core"></div>
+        <div class="atmosphere__haze"></div>
+        <div class="atmosphere__vignette"></div>
+      </div>
+
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__brand">
+            <img src="assets/mark.png" alt="" class="header__mark" />
+            <span class="header__wordmark" aria-label="ARCHAIN">
+              AR<span class="header__c">C</span>HAIN
+            </span>
+          </div>
+          <div class="header__right">
+            <a
+              class="header__x"
+              href="https://x.com/archaindotfun"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow ARCHAIN on X"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="hero">
+        <div class="hero__content">
+          <h1 class="hero__headline">
+            <span class="hero__line">
+              <span class="hero__static">LAUNCH WITHOUT&nbsp;</span>
+              <em class="hero__limits">LIMITS</em>
+            </span>
+            <span class="hero__line hero__line--sub">ON ARC CHAIN</span>
+          </h1>
+
+          <p class="hero__support">
+            Arc’s first launchpad with an agent built in.
+          </p>
+
+          <div class="hero__cta">
+            <div class="countdown">
+              <div class="countdown__block" data-countdown="start">
+                <p class="countdown__label" data-label>STARTS IN</p>
+                <div class="countdown__digits">
+                  <span data-h>04</span><i>:</i><span data-m>00</span><i>:</i><span data-s>00</span>
+                </div>
+                <div class="countdown__units" aria-hidden="true">
+                  <span>HRS</span><span>MIN</span><span>SEC</span>
+                </div>
+              </div>
+              <div class="countdown__divider" aria-hidden="true"></div>
+              <div class="countdown__block" data-countdown="end">
+                <p class="countdown__label" data-label>ENDS IN</p>
+                <div class="countdown__digits">
+                  <span data-h>40</span><i>:</i><span data-m>00</span><i>:</i><span data-s>00</span>
+                </div>
+                <div class="countdown__units" aria-hidden="true">
+                  <span>HRS</span><span>MIN</span><span>SEC</span>
+                </div>
+              </div>
+            </div>
+
+            <div id="waitlist-action">
+              <span class="waitlist-btn waitlist-btn--disabled">JOIN WAITLIST</span>
+            </div>
+          </div>
+
+          <div class="hero__sculpture" aria-hidden="true">
+            <div class="hero__sculpture-glow"></div>
+            <img src="assets/mark.png" alt="" class="hero__mark" draggable="false" />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
